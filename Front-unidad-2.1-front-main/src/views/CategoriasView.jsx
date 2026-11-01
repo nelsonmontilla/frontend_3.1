@@ -12,7 +12,8 @@ function CategoriasView() {
     cargarCategorias,
     eliminarCategoria,
   } = useCategorias();
-  const { usuarioAutenticado } = useAuth();
+  const { usuarioAutenticado, rolUsuario } = useAuth();
+  const esAdmin = rolUsuario === "admin";
 
   const [mostrarModal, setMostrarModal] = useState(false);
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
@@ -51,13 +52,13 @@ function CategoriasView() {
             Entidad con CRUD completo: Crea, consulta, actualiza y elimina categorías de productos.
           </p>
         </div>
-        {usuarioAutenticado ? (
+        {esAdmin ? (
           <Button variant="success" onClick={abrirCrear} className="px-4">
             ➕ Nueva Categoría
           </Button>
         ) : (
           <Badge bg="secondary" className="p-2">
-            Inicia sesión para gestionar categorías
+            {usuarioAutenticado ? "Solo el administrador puede modificar categorías" : "Inicia sesión para gestionar categorías"}
           </Badge>
         )}
       </div>
@@ -91,7 +92,7 @@ function CategoriasView() {
                       {cat.fechaCreacion ? new Date(cat.fechaCreacion).toLocaleDateString() : "—"}
                     </td>
                     <td>
-                      {usuarioAutenticado ? (
+                      {esAdmin ? (
                         <div className="d-flex justify-content-center gap-2">
                           <Button
                             size="sm"
