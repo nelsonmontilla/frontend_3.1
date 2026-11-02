@@ -129,12 +129,31 @@ const ListaProductos = ({
       {productos.map((producto) => (
         <Col md={6} lg={4} key={producto._id}>
           <Card className="h-100 shadow-sm border-0 rounded-4 overflow-hidden">
-            <div className="img-container" style={{ height: "200px", overflow: "hidden", background: "#f1f5f9" }}>
+            <div
+              className="img-container"
+              style={{
+                width: "100%",
+                height: "170px",
+                overflow: "hidden",
+                background: "#f8fafc",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "12px",
+              }}
+            >
               <Card.Img
                 variant="top"
                 src={producto.imagen || "https://placehold.co/400x200?text=Producto"}
                 alt={producto.nombre}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  objectPosition: "center",
+                  borderRadius: "14px",
+                  background: "#fff",
+                }}
               />
             </div>
             <Card.Body className="d-flex flex-column">
