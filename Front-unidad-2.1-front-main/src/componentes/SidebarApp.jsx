@@ -7,9 +7,9 @@ function SidebarApp({ vistaActual, cambiarVista }) {
   const { rolUsuario } = useAuth();
 
   const menuItems = [
-    { id: "inicio", label: "Inicio (Landing)", icon: "🏠" },
+    { id: "inicio", label: "Inicio", icon: "🏠" },
     { id: "tienda", label: "Tienda y Productos", icon: "🛒" },
-    { id: "categorias", label: "Categorías (CRUD)", icon: "🏷️" },
+    { id: "categorias", label: "Categorías", icon: "🏷️" },
     { id: "favoritos", label: "Mis Favoritos", icon: "⭐" },
     { id: "nosotros", label: "Sobre Nosotros", icon: "ℹ️" },
     { id: "faq", label: "Preguntas Frecuentes", icon: "❓" },

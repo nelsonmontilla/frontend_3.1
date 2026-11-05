@@ -19,7 +19,7 @@ function InicioView({ cambiarVista }) {
             Inventario y Tienda UVM
           </h1>
           <p className="text-muted mx-auto mb-4 lead" style={{ maxWidth: 760 }}>
-            Sistema completo de comercio electrónico con CRUD de productos, categorías y usuarios,
+            Sistema completo de comercio electrónico con gestión de productos, categorías y usuarios,
             autenticación segura con JWT, estado global en Redux y arquitectura responsive.
           </p>
 
@@ -61,7 +61,7 @@ function InicioView({ cambiarVista }) {
           <Card className="h-100 shadow-sm border-0 rounded-4 p-3">
             <Card.Body>
               <div className="fs-1 text-primary mb-3">📦</div>
-              <h4 className="fw-bold text-slate-800 mb-2">CRUD Completo</h4>
+              <h4 className="fw-bold text-slate-800 mb-2">Gestión Integral</h4>
               <p className="text-muted mb-0">
                 Gestiona productos, categorías y usuarios con formularios interactivos y tablas de datos avanzadas.
               </p>

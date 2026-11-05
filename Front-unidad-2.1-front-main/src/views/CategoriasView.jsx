@@ -49,7 +49,7 @@ function CategoriasView() {
         <div>
           <h2 className="fw-bold text-slate-800 mb-1">Gestión de Categorías</h2>
           <p className="text-muted mb-0">
-            Entidad con CRUD completo: Crea, consulta, actualiza y elimina categorías de productos.
+            Administra las categorías del inventario y organiza la estructura del catálogo.
           </p>
         </div>
         {esAdmin ? (
@@ -74,7 +74,7 @@ function CategoriasView() {
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Fecha de Creación</th>
-                <th>Acciones (CRUD)</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>

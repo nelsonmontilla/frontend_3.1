@@ -38,7 +38,7 @@ const ModalUsuarios = ({
                 <th>Email</th>
                 <th>Nombre Completo</th>
                 <th>Rol</th>
-                <th>Acciones (CRUD)</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>

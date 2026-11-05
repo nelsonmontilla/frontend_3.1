@@ -75,7 +75,7 @@ function UsuariosView({ cambiarVista }) {
         <div>
           <h2 className="fw-bold text-slate-800 mb-1">Panel de Usuarios Registrados</h2>
           <p className="text-muted mb-0">
-            Entidad con CRUD completo: Administra cuentas, roles, actualización y eliminación de usuarios.
+            Administra cuentas, roles, actualización y eliminación de usuarios del sistema.
           </p>
         </div>
         <Button variant="outline-primary" onClick={obtenerUsuarios}>
@@ -96,7 +96,7 @@ function UsuariosView({ cambiarVista }) {
                 <th>Teléfono</th>
                 <th>Rol</th>
                 <th>Fecha de Registro</th>
-                <th>Acciones (CRUD)</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>

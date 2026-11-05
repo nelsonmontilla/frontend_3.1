@@ -32,13 +32,13 @@ function NavbarApp({
           {/* Navegación visible especialmente en dispositivos móviles */}
           <Nav className="me-auto d-md-none py-2 border-top border-secondary mt-2">
             <Nav.Link onClick={() => cambiarVista("inicio")} active={vistaActual === "inicio"}>
-              🏠 Inicio (Landing)
+              🏠 Inicio
             </Nav.Link>
             <Nav.Link onClick={() => cambiarVista("tienda")} active={vistaActual === "tienda"}>
               🛒 Tienda y Productos
             </Nav.Link>
             <Nav.Link onClick={() => cambiarVista("categorias")} active={vistaActual === "categorias"}>
-              🏷️ Categorías (CRUD)
+              🏷️ Categorías
             </Nav.Link>
             <Nav.Link onClick={() => cambiarVista("favoritos")} active={vistaActual === "favoritos"}>
               ⭐ Mis Favoritos

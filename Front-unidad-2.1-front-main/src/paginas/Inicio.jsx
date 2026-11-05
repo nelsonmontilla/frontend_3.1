@@ -125,7 +125,7 @@ const Inicio = () => {
         <div>
           <h1 className="fw-bold text-slate-800 mb-1">Inventario y Tienda de Productos</h1>
           <p className="text-muted mb-0">
-            Administra productos con CRUD completo, gestiona usuarios y favoritos.
+            Administra productos, gestiona usuarios y favoritos en una sola experiencia.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ const Inicio = () => {
             variant={modoVista === "tabla" ? "primary" : "outline-primary"}
             onClick={() => setModoVista("tabla")}
           >
-            📊 Vista Tabla (CRUD)
+            📊 Vista Tabla
           </Button>
         </ButtonGroup>
       </div>
