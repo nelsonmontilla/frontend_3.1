@@ -118,22 +118,23 @@ Ubicación: `Front-unidad-2.1-el-backend-main/config.env`
 Debe contener los siguientes parámetros:
 
 ```env
-# Puerto del servidor backend
+# ConfiguraciÃ³n del backend para MongoDB Atlas
+MONGO_URI=mongodb+srv://robertagf907_db_user:PDquJ5Iv3pNw6Ov5@cluster0.tzxceqf.mongodb.net/BD?retryWrites=true&w=majority
 PORT=5000
 
-# Cadena de conexión a MongoDB Atlas
-MONGO_URI=mongodb+srv://robertagf907_db_user:4SApIBhOvzpTeIBD@cluster0.tzxceqf.mongodb.net/BD?retryWrites=true&w=majority
 
-# Credenciales iniciales para creación automática del Superadministrador
+# Cuenta de administrador
 ADMIN_USERNAME=admin
 ADMIN_NOMBRE=Admin
 ADMIN_EMAIL=admin@invsis.com
 ADMIN_PASSWORD=admin
 ADMIN_ROL=admin
 
-# Clave secreta y vigencia para la firma de tokens JWT
-JWT_SECRET=uvmpanas1337_secret_key_development
-JWT_EXPIRE=24h
+
+# JWT
+JWT_SECRET=uvmpanas1337
+JWT_EXPIRE=30d
+
 ```
 
 > [!IMPORTANT]
