@@ -1,4 +1,4 @@
-# 🛒 Inventario y Tienda Web (UVM Shop)
+# 🛒 Inventario y Tienda Web (UVM Shop) VIDEO DE YOUTUBE : https://youtu.be/dR0bOkPKJlA
 
 Sistema web completo (Frontend + Backend) para la gestión de inventario y catálogo de productos, con autenticación segura, control de roles (Administrador y Usuario), base de datos en la nube y gestión de estado global con Redux.
 
